@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "@nwaycorp/global-designsystem/core.css";
 import "./globals.css";
+import StyledComponentsRegistry from "./lib/registry";
+import "@nwaycorp/global-designsystem/core.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>루트 레이아웃{children}</body>
+      <body className={inter.className}>
+        <StyledComponentsRegistry>
+          Root Layout
+          {children}
+        </StyledComponentsRegistry>
+      </body>
     </html>
   );
 }
