@@ -1,5 +1,4 @@
 import Image from "next/image";
-import "@nwaycorp/global-designsystem/core.css";
 
 export default function Home() {
   return (

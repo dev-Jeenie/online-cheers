@@ -3,8 +3,6 @@
 import React, { useState } from "react";
 import { useServerInsertedHTML } from "next/navigation";
 import { ServerStyleSheet, StyleSheetManager } from "styled-components";
-import "@nwaycorp/global-designsystem/core.css";
-import THEME from "@nwaycorp/global-designsystem"
 
 export default function StyledComponentsRegistry({
   children,

@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import url("@nwaycorp/global-designsystem/core.css"); */
-@import "@nwaycorp/global-designsystem/core.css";
 
 :root {
   --foreground-rgb: 0, 0, 0;
