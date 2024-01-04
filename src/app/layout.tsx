@@ -5,6 +5,7 @@ import StyledComponentsRegistry from "./lib/registry";
 import "@nwaycorp/global-designsystem/core.css";
 import "@nwaycorp/global-designsystem/theme.css";
 import { ContainerModalProvider } from "@nwaycorp/global-designsystem";
+import { ReactNode } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +16,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  modal,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
+  modal: ReactNode;
 }) {
   return (
     <html lang="en">
@@ -25,6 +28,7 @@ export default function RootLayout({
           <StyledComponentsRegistry>
             Root Layout
             {children}
+            {modal}
           </StyledComponentsRegistry>
         </ContainerModalProvider>
       </body>
