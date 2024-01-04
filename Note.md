@@ -112,8 +112,31 @@ children = i/flow/login/page.tsx, modal = @modal/i/flow/login/page.tsx
 
 서로 주소가 다른데 같이 뜰 수 있게 해주는 인터셉팅 라우트
 
+intercept–route-test 브랜치에서 테스트 중.
+parallel route까지는 적용 완료
 
 
+# URL에는 뜨지 않는 route
+
+1. group 폴더
+(tableGroup)/
+
+주요역할 : 그룹의 공통 레이아웃 설정 가능
+
+2. pararllel route 폴더
+
+@modal/
+@auth/
+
+한 화면에 두 개의 페이지를 동시에 보여주는 용도.
+
+3. private 폴더
+
+_components/
+
+주소창에 뜨지 않는 폴더정리용
+
+ 
 
 
 
