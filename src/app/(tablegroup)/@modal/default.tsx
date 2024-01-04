@@ -1,6 +1,4 @@
-const Page = () => {
-  console.log("default만 뜸")
+export default function Default() {
+  console.log("Default");
   return null;
-};
-
-export default Page;
+}

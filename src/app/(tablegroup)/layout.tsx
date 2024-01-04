@@ -1,7 +1,7 @@
 import { Box, Typography } from "@nwaycorp/global-designsystem";
 import { ReactNode } from "react";
 
-const TableGroupLayout = ({
+const TableLayout = ({
   children,
   modal,
 }: {
@@ -10,11 +10,11 @@ const TableGroupLayout = ({
 }) => {
   return (
     <Box>
-      <Typography>TableGroup Layout</Typography>
+      <Typography>Table Layout</Typography>
       {children}
       {modal}
     </Box>
   );
 };
 
-export default TableGroupLayout;
+export default TableLayout;

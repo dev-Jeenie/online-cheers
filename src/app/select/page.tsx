@@ -56,8 +56,13 @@ const Select = () => {
           placeHolder="목표 멋지다 힘내! 곧 보자구 건배 🍻"
         />
       </Box>
-      <Link href="/table/jeenie">
+      {/* <Link href="/table/jeenie">
         <Typography variant="subtitle1">친구에게 건배 보내기!</Typography>
+      </Link> */}
+      <Link href="/completed">
+        <Button variant="solid" color="primary">
+          select 제출을 완료하면 /completed로 이동시킴
+        </Button>
       </Link>
     </Fragment>
   );
