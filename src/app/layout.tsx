@@ -4,7 +4,9 @@ import "./globals.css";
 import StyledComponentsRegistry from "./lib/registry";
 import "@nwaycorp/global-designsystem/core.css";
 import "@nwaycorp/global-designsystem/theme.css";
-import { ContainerModalProvider } from "@nwaycorp/global-designsystem";
+import {
+  ContainerModalProvider,
+} from "@nwaycorp/global-designsystem";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,12 +23,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ContainerModalProvider>
-          <StyledComponentsRegistry>
-            Root Layout
-            {children}
-          </StyledComponentsRegistry>
-        </ContainerModalProvider>
+        <StyledComponentsRegistry>
+          <ContainerModalProvider>
+            <div
+              style={{
+                height: "100dvh",
+                maxWidth: "640px",
+                minWidth: "320px",
+                margin: "0 auto",
+                background: "#ffffff",
+              }}
+            >
+              {children}
+            </div>
+          </ContainerModalProvider>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
